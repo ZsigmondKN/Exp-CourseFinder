@@ -1,5 +1,6 @@
 require "rspec"
-require "../models/join_name.rb"
+require "rack/test"
+require_relative "../models/join_name.rb"
 
 RSpec.describe do
     describe "#full_name" do
