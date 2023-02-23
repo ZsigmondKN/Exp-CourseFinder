@@ -1,5 +1,8 @@
-require 'sinatra'
+require "sinatra"
+require "sinatra/reloader"
 
-get '/' do
-    "Hello World"
+get "/times-table" do
+    @first_name = "Jhon"
+    @last_name = "Smith"
+    erb :index
 end
