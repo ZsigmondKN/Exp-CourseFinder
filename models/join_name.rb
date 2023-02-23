@@ -1,3 +1,3 @@
-def name(first_name, second_name)
-    return first_name
+def joint_name(first_name, last_name)
+    return "#{first_name} #{last_name}"
 end
