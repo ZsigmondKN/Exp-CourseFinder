@@ -1,0 +1,1 @@
+INSERT INTO staff_info VALUES (1, "Garry", "Smith", "garry.s@gsheffield.ac.uk", "properPass", "staff");
