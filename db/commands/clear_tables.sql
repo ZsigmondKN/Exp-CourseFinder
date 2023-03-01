@@ -1,2 +1,2 @@
-DELETE FROM user_info;
-DELETE FROM staff_info;
+DELETE FROM user_details;
+DELETE FROM staff_details;

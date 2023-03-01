@@ -1,0 +1,1 @@
+UPDATE user_details SET email = "new.email@gmail.com" WHERE id = 1;

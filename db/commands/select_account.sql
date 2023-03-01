@@ -1,0 +1,1 @@
+SELECT * FROM user_details WHERE id = 1;

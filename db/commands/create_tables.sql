@@ -1,12 +1,12 @@
-CREATE TABLE user_info (
+CREATE TABLE user_details (
     id INTEGER PRIMARY KEY,
     email TEXT,
     password TEXT
 );
 
-CREATE TABLE staff_info (
+CREATE TABLE staff_details (
     id INTEGER PRIMARY KEY,
-    firtst_name TEXT,
+    first_name TEXT,
     surname TEXT,
     email TEXT,
     password TEXT,

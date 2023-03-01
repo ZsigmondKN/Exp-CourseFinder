@@ -1,1 +1,1 @@
-SELECT COUNT(*) FROM user_info;
+SELECT * FROM staff_details;
