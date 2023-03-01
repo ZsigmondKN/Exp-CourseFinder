@@ -75,3 +75,50 @@ I, [2023-03-01T01:50:12.724928 #653]  INFO -- : (0.000021s) PRAGMA case_sensitiv
 I, [2023-03-01T01:50:12.726318 #653]  INFO -- : (0.000121s) SELECT sqlite_version()
 I, [2023-03-01T01:50:12.726650 #653]  INFO -- : (0.000148s) PRAGMA table_xinfo('staff_details')
 I, [2023-03-01T01:50:12.728043 #653]  INFO -- : (0.000147s) SELECT * FROM `staff_details`
+I, [2023-03-01T03:26:50.484911 #2118]  INFO -- : (0.001210s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:26:50.493892 #2118]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:28:19.111418 #2140]  INFO -- : (0.000210s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:28:19.111567 #2140]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:29:39.309950 #2162]  INFO -- : (0.000214s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:29:39.310110 #2162]  INFO -- : (0.000026s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:29:55.943706 #2175]  INFO -- : (0.000206s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:29:55.943853 #2175]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:30:12.727163 #2188]  INFO -- : (0.000232s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:30:12.727308 #2188]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:31:48.187773 #2220]  INFO -- : (0.000202s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:31:48.187930 #2220]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:31:48.188359 #2220]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2023-03-01T03:31:48.188635 #2220]  INFO -- : (0.000111s) PRAGMA table_xinfo('user_details')
+I, [2023-03-01T03:35:25.497551 #2276]  INFO -- : (0.000234s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:35:25.497718 #2276]  INFO -- : (0.000027s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:36:05.264544 #2292]  INFO -- : (0.000246s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:36:05.264708 #2292]  INFO -- : (0.000024s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:36:05.543990 #2292]  INFO -- : (0.000173s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:36:05.544128 #2292]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:36:05.544820 #2292]  INFO -- : (0.000132s) SELECT sqlite_version()
+I, [2023-03-01T03:36:05.545341 #2292]  INFO -- : (0.000238s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-01T03:36:52.574950 #2316]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:36:52.575116 #2316]  INFO -- : (0.000028s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:36:52.810924 #2316]  INFO -- : (0.000227s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:36:52.811119 #2316]  INFO -- : (0.000030s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:36:52.811800 #2316]  INFO -- : (0.000114s) SELECT sqlite_version()
+I, [2023-03-01T03:36:52.812326 #2316]  INFO -- : (0.000286s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-01T03:36:52.813539 #2316]  INFO -- : (0.000036s) BEGIN
+I, [2023-03-01T03:36:52.814812 #2316]  INFO -- : (0.000826s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-01T03:36:52.882326 #2316]  INFO -- : (0.067311s) COMMIT
+I, [2023-03-01T03:36:52.882657 #2316]  INFO -- : (0.000043s) BEGIN
+I, [2023-03-01T03:36:52.883298 #2316]  INFO -- : (0.000287s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-01T03:36:52.948917 #2316]  INFO -- : (0.065478s) COMMIT
+I, [2023-03-01T03:36:53.018540 #2316]  INFO -- : (0.069345s) DELETE FROM `staff_details` WHERE `id` = 4
+I, [2023-03-01T03:53:03.559675 #2445]  INFO -- : (0.000166s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:53:03.559814 #2445]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T03:54:23.620675 #2446]  INFO -- : (0.000170s) PRAGMA foreign_keys = 1
+I, [2023-03-01T03:54:23.620814 #2446]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T04:02:07.532618 #2680]  INFO -- : (0.000209s) PRAGMA foreign_keys = 1
+I, [2023-03-01T04:02:07.532770 #2680]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T04:02:07.533306 #2680]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2023-03-01T04:02:07.533651 #2680]  INFO -- : (0.000168s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-01T04:02:16.825896 #2681]  INFO -- : (0.000179s) PRAGMA foreign_keys = 1
+I, [2023-03-01T04:02:16.826044 #2681]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-01T04:02:16.826536 #2681]  INFO -- : (0.000080s) SELECT sqlite_version()
+I, [2023-03-01T04:02:16.826895 #2681]  INFO -- : (0.000164s) PRAGMA table_xinfo('staff_details')
