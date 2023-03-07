@@ -1,0 +1,21 @@
+<%= erb :"common/header" %>
+  <h1>Users</h1>
+  <% if @users.count > 0 %>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%=h user.id %></td>
+        <td><%=h user.email %></td>
+        <td><%=h user.password %></td>
+      </tr>
+    <% end %> 
+    </table>
+  <% else %>
+    <p>The database is empty!</p>
+  <% end %>
+<%= erb :"common/footer" %>

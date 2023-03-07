@@ -1,12 +1,4 @@
-
-require "rspec"
-require "sequel"
-require_relative "../../models/staff"
-
-# Set-up database and log location
-db_path = File.dirname(__FILE__)
-db = "#{db_path}/../../db/account.sqlite3"
-DB = Sequel.sqlite(db)
+require_relative "../spec_helper"
 
 RSpec.describe StaffDetail do
     describe "#print_given_name" do

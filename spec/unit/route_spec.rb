@@ -1,15 +1,6 @@
-require "rspec"
-require "rack/test"
-
-require_relative "../app"
+require_relative "../spec_helper"
 
 RSpec.describe "Test Sinatra index page" do
-    include Rack::Test::Methods
-
-    def app
-        Sinatra::Application
-    end
-
     describe "GET /" do
         it "has a status code of 200 (OK)" do
           get "/"

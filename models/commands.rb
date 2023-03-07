@@ -1,12 +1,7 @@
 require "logger"
 require "sequel"
 require_relative "staff"
-
-# Set-up database and log location
-db_path = File.dirname(__FILE__)
-db = "#{db_path}/../db/account.sqlite3"
-log = "#{db_path}/../log/db.log"
-DB = Sequel.sqlite(db, logger: Logger.new(log))
+require_relative "users"
 
 # Create a new player instance
 staff = StaffDetail.new
@@ -25,4 +20,14 @@ staff.save_changes
 
 # Now delete
 staff.delete
+
+# def sub
+#     user_del = UserDetail["DELETE * FROM albums"]
+#     user_del.delete
+# end
+
+def addUser
+    user = UserDetail.new(email: "test@gmail.com", password: "passy12345")
+    user.save_changes
+end
 

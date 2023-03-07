@@ -1,1 +1,1 @@
-SELECT * FROM staff_details;
+SELECT * FROM user_details;
