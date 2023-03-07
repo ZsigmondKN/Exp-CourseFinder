@@ -1,16 +1,23 @@
 <%= erb :"common/header" %>
-
-    <form method="post" action="/user-home-page">
-    <p>
-    email
-    <br>
-    <input type="email" name="email_field" />
-    <br>
-    password
-    <br>
-    <input type="text" name="password_field" />
-    </p>
-    <p><input type="submit" value="Submit"></p>
+    <% if @submitted_form %>
+        <% if @submission_error %>
+            <p class="error"> Please fill in the fields as required bellow</p>
+        <% else %>
+            <p class="pass"> You are now logged in. Welcome back USERNAME </p>
+        <% end %>
+    <% end %> 
+    <form>
+        Email:
+        <input type="email" name="email_field" value="<%= @provided_email %>" />
+        <% if @email_field_error %>
+                <br><strong class="error"><%= @email_field_error %></strong>
+            <% end %>
+        <br>
+        Password: 
+        <input type="text" name="password_field" value="<%= @provided_password %>" />
+        <% if @password_field_error %>
+                <br><strong class="error"><%= @password_field_error %></strong>
+        <% end %>
+        <p><input type="submit" value="Submit"></p>
     </form>
-
 <%= erb :"common/footer" %>
