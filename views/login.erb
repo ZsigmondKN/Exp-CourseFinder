@@ -1,7 +1,16 @@
 <%= erb :"common/header" %>
 
-    <p>Input email:</p>
-
-    <p>Input password</p>
+    <form method="post" action="/user-home-page">
+    <p>
+    email
+    <br>
+    <input type="email" name="email_field" />
+    <br>
+    password
+    <br>
+    <input type="text" name="password_field" />
+    </p>
+    <p><input type="submit" value="Submit"></p>
+    </form>
 
 <%= erb :"common/footer" %>

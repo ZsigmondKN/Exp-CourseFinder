@@ -328,3 +328,63 @@ I, [2023-03-07T01:08:18.530627 #502]  INFO -- : (0.000229s) UPDATE `staff_detail
 I, [2023-03-07T01:08:18.602632 #502]  INFO -- : (0.071875s) COMMIT
 I, [2023-03-07T01:08:18.669808 #502]  INFO -- : (0.066929s) DELETE FROM `staff_details` WHERE `id` = 4
 I, [2023-03-07T01:08:33.810573 #502]  INFO -- : (0.000142s) SELECT * FROM `user_details` WHERE `id` = 'DELETE * FROM albums'
+I, [2023-03-07T01:45:31.453414 #775]  INFO -- : (0.000286s) PRAGMA foreign_keys = 1
+I, [2023-03-07T01:45:31.453576 #775]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2023-03-07T01:45:32.001389 #775]  INFO -- : (0.000195s) SELECT sqlite_version()
+I, [2023-03-07T01:45:32.001975 #775]  INFO -- : (0.000254s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-07T01:45:32.005615 #775]  INFO -- : (0.000254s) PRAGMA table_xinfo('user_details')
+I, [2023-03-07T01:45:32.007531 #775]  INFO -- : (0.001101s) BEGIN
+I, [2023-03-07T01:45:32.008497 #775]  INFO -- : (0.000554s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-07T01:45:32.133319 #775]  INFO -- : (0.124622s) COMMIT
+I, [2023-03-07T01:45:32.133682 #775]  INFO -- : (0.000044s) BEGIN
+I, [2023-03-07T01:45:32.134443 #775]  INFO -- : (0.000401s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-07T01:45:32.205356 #775]  INFO -- : (0.070720s) COMMIT
+I, [2023-03-07T01:45:32.302177 #775]  INFO -- : (0.096587s) DELETE FROM `staff_details` WHERE `id` = 4
+I, [2023-03-07T02:05:29.508861 #1711]  INFO -- : (0.000263s) PRAGMA foreign_keys = 1
+I, [2023-03-07T02:05:29.509030 #1711]  INFO -- : (0.000026s) PRAGMA case_sensitive_like = 1
+I, [2023-03-07T02:05:29.889054 #1711]  INFO -- : (0.000179s) SELECT sqlite_version()
+I, [2023-03-07T02:05:29.889804 #1711]  INFO -- : (0.000357s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-07T02:05:29.894932 #1711]  INFO -- : (0.000285s) PRAGMA table_xinfo('user_details')
+I, [2023-03-07T02:05:29.898332 #1711]  INFO -- : (0.002291s) BEGIN
+I, [2023-03-07T02:05:29.899692 #1711]  INFO -- : (0.000823s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-07T02:05:29.964009 #1711]  INFO -- : (0.064118s) COMMIT
+I, [2023-03-07T02:05:29.964291 #1711]  INFO -- : (0.000035s) BEGIN
+I, [2023-03-07T02:05:29.964831 #1711]  INFO -- : (0.000253s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-07T02:05:30.034644 #1711]  INFO -- : (0.069676s) COMMIT
+I, [2023-03-07T02:05:30.104912 #1711]  INFO -- : (0.070034s) DELETE FROM `staff_details` WHERE `id` = 4
+I, [2023-03-07T02:05:52.600175 #1715]  INFO -- : (0.000202s) PRAGMA foreign_keys = 1
+I, [2023-03-07T02:05:52.600316 #1715]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2023-03-07T02:05:52.825697 #1715]  INFO -- : (0.000127s) SELECT sqlite_version()
+I, [2023-03-07T02:05:52.827129 #1715]  INFO -- : (0.001202s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-07T02:05:52.829150 #1715]  INFO -- : (0.000110s) PRAGMA table_xinfo('user_details')
+I, [2023-03-07T02:05:52.829711 #1715]  INFO -- : (0.000021s) BEGIN
+I, [2023-03-07T02:05:52.831400 #1715]  INFO -- : (0.000377s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-07T02:05:52.905897 #1715]  INFO -- : (0.074362s) COMMIT
+I, [2023-03-07T02:05:52.906186 #1715]  INFO -- : (0.000033s) BEGIN
+I, [2023-03-07T02:05:52.906723 #1715]  INFO -- : (0.000218s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-07T02:05:52.972052 #1715]  INFO -- : (0.065212s) COMMIT
+I, [2023-03-07T02:05:53.039968 #1715]  INFO -- : (0.067693s) DELETE FROM `staff_details` WHERE `id` = 4
+I, [2023-03-07T02:20:05.238477 #2017]  INFO -- : (0.000273s) PRAGMA foreign_keys = 1
+I, [2023-03-07T02:20:05.238636 #2017]  INFO -- : (0.000025s) PRAGMA case_sensitive_like = 1
+I, [2023-03-07T02:20:05.610340 #2017]  INFO -- : (0.000170s) SELECT sqlite_version()
+I, [2023-03-07T02:20:05.610937 #2017]  INFO -- : (0.000267s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-07T02:20:05.614653 #2017]  INFO -- : (0.000213s) PRAGMA table_xinfo('user_details')
+I, [2023-03-07T02:20:05.615563 #2017]  INFO -- : (0.000037s) BEGIN
+I, [2023-03-07T02:20:05.618747 #2017]  INFO -- : (0.001153s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-07T02:20:05.698302 #2017]  INFO -- : (0.079264s) COMMIT
+I, [2023-03-07T02:20:05.698603 #2017]  INFO -- : (0.000040s) BEGIN
+I, [2023-03-07T02:20:05.699200 #2017]  INFO -- : (0.000274s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-07T02:20:05.768725 #2017]  INFO -- : (0.069394s) COMMIT
+I, [2023-03-07T02:20:05.832922 #2017]  INFO -- : (0.063952s) DELETE FROM `staff_details` WHERE `id` = 4
+I, [2023-03-07T02:21:36.098829 #2053]  INFO -- : (0.000205s) PRAGMA foreign_keys = 1
+I, [2023-03-07T02:21:36.098984 #2053]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2023-03-07T02:21:36.342302 #2053]  INFO -- : (0.000164s) SELECT sqlite_version()
+I, [2023-03-07T02:21:36.343809 #2053]  INFO -- : (0.001271s) PRAGMA table_xinfo('staff_details')
+I, [2023-03-07T02:21:36.346409 #2053]  INFO -- : (0.000290s) PRAGMA table_xinfo('user_details')
+I, [2023-03-07T02:21:36.346984 #2053]  INFO -- : (0.000025s) BEGIN
+I, [2023-03-07T02:21:36.349134 #2053]  INFO -- : (0.000608s) INSERT INTO `staff_details` (`first_name`, `surname`, `email`, `password`, `role`) VALUES ('Richard', 'Samson', 'aaa@gmail.com', 'pass123', 'admin') RETURNING *
+I, [2023-03-07T02:21:36.405581 #2053]  INFO -- : (0.056253s) COMMIT
+I, [2023-03-07T02:21:36.405874 #2053]  INFO -- : (0.000035s) BEGIN
+I, [2023-03-07T02:21:36.406425 #2053]  INFO -- : (0.000276s) UPDATE `staff_details` SET `email` = 'propper.email@gmail.com' WHERE (`id` = 4)
+I, [2023-03-07T02:21:36.471416 #2053]  INFO -- : (0.064863s) COMMIT
+I, [2023-03-07T02:21:36.531084 #2053]  INFO -- : (0.059439s) DELETE FROM `staff_details` WHERE `id` = 4
